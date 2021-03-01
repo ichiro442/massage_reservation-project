@@ -21,7 +21,8 @@
    <div class="top_section" id="app">
     <div class="container fadein">
       <div class="top_wrapper flex">
-        <h1 class="text-focus-in">心温</h1>
+      <img class="titleImg text-focus-in" src="img/massageTitle.jpg" alt="">
+        <!-- <h1 class="text-focus-in">心温</h1> -->
         <h2 class="fade-in-top">パートナーマッサージ専門</h2>
       </div>
       <!-- <div class="internetBtns button fade-in-left  flex">
@@ -41,31 +42,37 @@
             <input type="date" name="calender"/>
             <p>時間帯選択</p>
             <div class="timeChoices flex">
-              <input 
-                type="radio"
-                name="times" 
-                value="午前の部(10:00~12:00)" 
-                class="timeChoice morning button" 
-                @click="choiceMorning('午前の部(10:00~12:00)')">午前の部(10:00~12:00)
-              <input 
-                type="radio" 
-                name="times" 
-                value="午後の部(14:00~16:00)" 
-                class="timeChoice afternoon button" 
-                @click="choiceAfternoon('午後の部(14:00~16:00)')">午後の部(14:00~16:00)
+              <label for="">
                 <input 
+                  type="radio"
+                  name="times" 
+                  value="午前の部(10:00~12:00)" 
+                  class="timeChoice morning" 
+                  @click="choiceMorning('午前の部(10:00~12:00)')">午前の部(10:00~12:00)
+                </label>
+              <label for="">
+                  <input 
                   type="radio" 
                   name="times" 
-                  value="夜の部(18:00~20:00)" 
-                  class="timeChoice night button" 
-                  @click="choiceNight('夜の部(18:00~20:00)')">夜の部(18:00~20:00)
-            </div>
-              <p class="choiceResult" v-if="times === 'choiceMorning'">選択した時間帯<br>
+                  value="午後の部(14:00~16:00)" 
+                  class="timeChoice afternoon" 
+                  @click="choiceAfternoon('午後の部(14:00~16:00)')">午後の部(14:00~16:00)
+                </label>
+                <label for="">
+                  <input 
+                    type="radio" 
+                    name="times" 
+                    value="夜の部(18:00~20:00)" 
+                    class="timeChoice night" 
+                    @click="choiceNight('夜の部(18:00~20:00)')">夜の部(18:00~20:00)
+                </label>
+                </div>
+              <!-- <p class="choiceResult" v-if="times === 'choiceMorning'">選択した時間帯<br>
                 <span class="timeResult" style="background-color:#3232b3">午前の部(10:00~12:00)</span></p>
               <p class="choiceResult" v-else-if="times === 'choiceAfternoon'">選択した時間帯 <br>
                 <span class="timeResult" style="background-color:#1c751c">午後の部(14:00~16:00)</span></p>
               <p class="choiceResult" v-else-if="times === 'choiceNight'">選択した時間帯<br>
-                <span class="timeResult" style="background-color:#524646">夜の部(18:00~20:00)</span></p>
+                <span class="timeResult" style="background-color:#524646">夜の部(18:00~20:00)</span></p> -->
           </div>
           <div class="confirmBtn">
             <button class="button">送信</button>

@@ -1,20 +1,20 @@
 /* 共通 */
 html {
     box-sizing: border-box;
-}
-* {
+  }
+  * {
     box-sizing: border-box;
-}
-.flex {
+  }
+  .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-a {
+  }
+  a {
     /* color: white; */
     text-decoration: none;
-}
-h1 {
+  }
+  h1 {
     font-family: "Hachi Maru Pop", cursive;
     /* font-family: 'Potta One', cursive; */
     font-size: 15rem;
@@ -22,36 +22,36 @@ h1 {
     margin: 0;
     text-shadow: 4px 4px 3px #f5f5f5;
     font-weight: bold;
-}
-h2,
-h3 {
+  }
+  h2,
+  h3 {
     color: #062d9f;
     margin-top: 0;
     text-shadow: 4px 4px 3px #f5f5f5;
-}
-p {
+  }
+  p {
     margin-bottom: 2px;
-}
-input {
+  }
+  input {
     width: 100%;
     height: 9%;
     font-size: 1rem;
-}
-button {
+  }
+  button {
     margin: 1rem;
-}
-/* ボタン光る処理 */
-.button {
-    color: #fff;
+  }
+  /* ボタン光る処理 */
+  .button {
+    color: black;
     position: relative;
     transition: 800ms ease all;
-}
-.button:hover {
+  }
+  .button:hover {
     background: green;
     color: #fff;
-}
-.button:before,
-.button:after {
+  }
+  .button:before,
+  .button:after {
     content: "";
     position: absolute;
     top: 0;
@@ -60,79 +60,91 @@ button {
     width: 0;
     background: white;
     transition: 400ms ease all;
-}
-.button:after {
+  }
+  .button:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
-}
-.button:hover:before,
-.button:hover:after {
+  }
+  .button:hover:before,
+  .button:hover:after {
     width: 100%;
     transition: 800ms ease all;
-}
-
-/* main */
-body {
+  }
+  
+  /* main */
+  body {
     width: 100%;
     height: 100%;
     margin: 0;
-flex-direction: column;
+    flex-direction: column;
     /* background-image: url(http://tamagin-urara.com/wp-content/themes/urara/assets/img/bg_body.jpg);  */
     background-size: cover;
-}
-.top_section{
-  width: 100%;
-}
-.top_wrapper{
-  width: 90rem;
-  height: 60rem;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 4;
-  /* background-image: url("{{ asset('assets/img/green.jpeg') }}");
-  background: url("../img/green.jpeg");
-  background-size: cover; */
-}
-.bodyImgs{
-  width: 100%;
-  height: 70rem;
-  position: relative;
-}
-.bodyImg {
+  }
+  /* -----------テスト------------------ */
+  .titleImg {
+    display: inline-block;
+    width: 30rem;
+    border-radius: 50%;
+  }
+  label {
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  /* -----------テスト------------------ */
+  
+  .top_section {
+    width: 100%;
+  }
+  .top_wrapper {
+    height: 60rem;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 4;
+    /* background-image: url("{{ asset('assets/img/green.jpeg') }}");
+    background: url("../img/green.jpeg");
+    background-size: cover; */
+  }
+  .bodyImgs {
+    width: 100%;
+    height: 70rem;
+    position: relative;
+  }
+  .bodyImg {
     width: 100%;
     height: 70rem;
     object-fit: cover;
     position: absolute;
     z-index: -5;
-}
-.container {
+  }
+  .container {
     width: 100%;
     /* height: 200rem; */
     flex-direction: column;
-}
-/*-------------------- 予約必須入力項目-------------------- */
-.reservation {
+  }
+  /*-------------------- 予約必須入力項目-------------------- */
+  .reservation {
     width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: flex-end;
-}
-/* .internetBtns {
-    width: 12rem;
-    height: 4rem;
-    cursor: pointer;
-    background-image: url(https://www.jaf-co.jp/assets/img/recruit/b-recruit_number_bg.png);
-    background-size: cover;
-    margin-top: 1rem;
-} */
-.internetBtn {
+  }
+  /* .internetBtns {
+      width: 12rem;
+      height: 4rem;
+      cursor: pointer;
+      background-image: url(https://www.jaf-co.jp/assets/img/recruit/b-recruit_number_bg.png);
+      background-size: cover;
+      margin-top: 1rem;
+  } */
+  .internetBtn {
     height: 2rem;
     width: 10rem;
     text-align: center;
@@ -140,193 +152,192 @@ flex-direction: column;
     cursor: pointer;
     margin: 0;
     text-align: center;
-}
-.form_wrapper {
+  }
+  .form_wrapper {
     margin-bottom: 2rem;
-}
-form {
+  }
+  form {
     width: 100%;
     height: 100%;
-}
-/* 時間選択 */
-.reservationBox {
+  }
+  /* 時間選択 */
+  .reservationBox {
     width: 100%;
     height: 40rem;
     background-color: #e4f3e4;
     margin: 0 auto;
     flex-direction: column;
-}
-.choiceResult {
+  }
+  .choiceResult {
     width: 50%;
     background-color: #f1d266;
     text-align: center;
-}
-.timeChoices {
+  }
+  .timeChoices {
     width: 100%;
-    height: 3rem;
-}
-.timeChoice {
-    height: 100%;
+    height: 4rem;
+  }
+  .timeChoice {
+    height: 2rem;
     cursor: pointer;
     color: black;
     margin: 0.3rem;
     text-align: center;
     border: 2px solid #fff;
     background-color: aliceblue;
-}
-/* .morning {
-    background-color: #3232b3;
-
-}
-.afternoon {
-    background-color: #1c751c;
-}
-.night {
-    background-color: #524646;
-} */
-.time{
+  }
+  /* .morning {
+      background-color: #3232b3;
+  
+  }
+  .afternoon {
+      background-color: #1c751c;
+  }
+  .night {
+      background-color: #524646;
+  } */
+  .time {
     margin: 1rem;
-}
-.timeChoiceResult {
+  }
+  .timeChoiceResult {
     background-color: #3232b3;
-}
-.timeResult {
+  }
+  .timeResult {
     color: #fff;
-}
-select {
+  }
+  select {
     width: 100%;
     height: 100%;
-}
-/* 予約確認画面へボタン */
-.confirmBtn {
+  }
+  /* 予約確認画面へボタン */
+  .confirmBtn {
     text-align: center;
     /* background-color: yellow; */
     margin: 1.5rem;
-}
-.confirmBtn a {
+  }
+  .confirmBtn a {
     width: 100%;
     height: 100%;
     color: #fff;
     background-color: red;
     padding: 8px 40px;
-}
-.confirmBtn button {
+  }
+  .confirmBtn button {
     height: 2rem;
     width: 60%;
     border: 0;
     /* background-color: #df371b; */
-}
-/* 電話予約はこちら */
-.phoneResevation {
+  }
+  /* 電話予約はこちら */
+  .phoneResevation {
     margin: 1.5rem;
     text-align: center;
-}
-/* --------------------色選び---------------------------- */
-.colors {
+  }
+  /* --------------------色選び---------------------------- */
+  .colors {
     width: 100%;
     height: 5rem;
     background-color: red;
-}
-.color {
+  }
+  .color {
     width: 100%;
     height: 100%;
-}
-/* --------------------色選び---------------------------- */
-
-/* フェードイン */
-.text-focus-in {
-    -webkit-animation: text-focus-in 4s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-        both;
+  }
+  /* --------------------色選び---------------------------- */
+  
+  /* フェードイン */
+  .text-focus-in {
+    -webkit-animation: text-focus-in 4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: text-focus-in 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-@-webkit-keyframes text-focus-in {
+  }
+  @-webkit-keyframes text-focus-in {
     0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
     }
     100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
     }
-}
-@keyframes text-focus-in {
+  }
+  @keyframes text-focus-in {
     0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
     }
     100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
     }
-}
-/*下からフェードイン*/
-.fade-in-top {
+  }
+  /*下からフェードイン*/
+  .fade-in-top {
     opacity: 0;
     animation-name: fadein-top;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-}
-@keyframes fadein-top {
+  }
+  @keyframes fadein-top {
     0% {
-        opacity: 0;
-        transform: translateX(-400px);
+      opacity: 0;
+      transform: translateX(-400px);
     }
     50% {
-        opacity: 0.3;
-        transform: translateX(-200px);
+      opacity: 0.3;
+      transform: translateX(-200px);
     }
-
+  
     100% {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
-/* ここまでが文字が浮かび上がってくる処理 */
-/*左からフェードイン*/
-.fade-in-left {
+  }
+  /* ここまでが文字が浮かび上がってくる処理 */
+  /*左からフェードイン*/
+  .fade-in-left {
     opacity: 0;
     animation-name: fadein-left;
     animation-duration: 1.3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-}
-@keyframes fadein-left {
+  }
+  @keyframes fadein-left {
     0% {
-        opacity: 0;
-        transform: translateX(-300px);
+      opacity: 0;
+      transform: translateX(-300px);
     }
     50% {
-        opacity: 0.3;
-        transform: translateX(-150px);
+      opacity: 0.3;
+      transform: translateX(-150px);
     }
-
+  
     100% {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
-/* -----------------------------------予約確認画面-------------------------------------------------- */
-.confirm_wrapper {
+  }
+  /* -----------------------------------予約確認画面-------------------------------------------------- */
+  .confirm_wrapper {
     width: 50%;
     height: 60rem;
     margin: 0 auto;
     background-color: red;
-}
-.confirm_container {
+  }
+  .confirm_container {
     width: 70%;
     flex-direction: column;
-}
-.confirmBox {
+  }
+  .confirmBox {
     flex-direction: column;
     height: 25rem;
     border: 2px solid #fdfbfb;
-}
-.comfirm_btn {
+  }
+  .comfirm_btn {
     background-color: #062d9f;
     height: 2rem;
     width: 9rem;
@@ -335,17 +346,17 @@ select {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-}
-.comfirm_btn a {
+  }
+  .comfirm_btn a {
     width: 100%;
     height: 100%;
     display: inline-block;
-}
-.sendBtns {
+  }
+  .sendBtns {
     height: 2rem;
     width: 9rem;
-}
-.sendBtn {
+  }
+  .sendBtn {
     width: 100%;
     height: 100%;
     color: #fff;
@@ -355,62 +366,80 @@ select {
     margin: 0;
     border: 0;
     cursor: pointer;
-}
-
-table {
+  }
+  
+  table {
     text-align: left;
     width: 100%;
     height: 100%;
     display: block;
     border-collapse: collapse;
-}
-
-table td {
+  }
+  
+  table td {
     height: 4rem;
     font-weight: bold;
-}
-table tr {
+  }
+  table tr {
     width: 100%;
     border-bottom: 3px solid #fdfbfb;
-}
-
-/* ----------------------------------レスポンシブ--------------------------------------------- */
-/* --------------予約入力画面------------------------ */
-@media screen and (max-width: 355px) {
+  }
+  
+  /* ----------------------------------レスポンシブ--------------------------------------------- */
+  /* --------------予約入力画面------------------------ */
+  @media screen and (max-width: 355px) {
     /* 320pxまでの幅の場合に適応される */
     /* body {
-    background-color: #68b876;
-  } */
+      background-color: #68b876;
+    } */
     h1 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
     h2 {
-        font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     .reservationBox {
-        height: 31rem;
-        flex-direction: column;
+      height: 31rem;
+      flex-direction: column;
+      margin-bottom: 5rem;
     }
-    .reservation{
+    .top_wrapper{
+        width: 100%;
+    }
+    .bodyImgs {
+      height: 50rem;
+    }
+    .titleImg {
+      width: 20rem;
+    }
+    .reservation {
       width: 90%;
       margin: 0 auto;
     }
     .form_wrapper {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
-    .timeChoices {
-        width: 30%;
+    label {
+      font-size: 0.8rem;
     }
+    /* .timeChoice {
+      font-size: ;
+    } */
+    /* .timeChoices {
+        
+      width: 30%;
+    } */
     /* --------------------確認画面--------------------------- */
     .confirm_wrapper {
-        width: 100%;
+      width: 100%;
     }
     .confirm_container {
-        width: 100%;
+      width: 100%;
     }
     table td {
-        width: 100%;
-        height: 4rem;
+      width: 100%;
+      height: 4rem;
     }
-}
+  }
+  
