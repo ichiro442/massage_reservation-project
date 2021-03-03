@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Potta+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <title>パートナーマッサージ</title>
+    <title>心温</title>
   </head>
 
   <body class="flex">

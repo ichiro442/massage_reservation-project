@@ -9,7 +9,7 @@
 </head>
 <body class="app flex">
     <div class="bodyImgs">
-      <img class="bodyImg" src="img/green.jpeg" alt="">
+      <img class="bodyImg" src="img/green.jpeg" alt="森林の画像">
     </div>
     <div class="confirm_wrapper flex">
         <div class="confirm_container flex">
